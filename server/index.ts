@@ -23,7 +23,6 @@ app.use("/api/users", userRoutes);
 // Create an HTTP server
 const httpServer = createServer(app);
 
-// Initialize socket.io with the HTTP server
 const io = new Server(httpServer, {
     cors: {
         origin: "http://localhost:5173",
